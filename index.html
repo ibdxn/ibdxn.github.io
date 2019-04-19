@@ -83,6 +83,9 @@
           </a>
           <p class="post-meta"></a>
               on  </p> <input type="datetime-local" id='currentDatetime'/>
+              <script>
+                document.getElementById('currentDatetime').value= new Date().toISOString().slice(0, -1);
+              </script>
         
         </div>
         <hr>
