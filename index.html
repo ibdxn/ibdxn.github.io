@@ -83,7 +83,15 @@
           </a>
           <p class="post-meta"></a>
               on  </p> 
-              . date("Y-m-d")."<br/>
+              <script type="text/javascript">
+
+                var d = new Date(); 
+                var localeDate  =  d.toLocaleDateString(); 
+                var localeTime  =  d.toLocaleTimeString(); 
+                
+                document.getElementById ( 'usingVar' ).innerHTML = localeDate  +  " / "  +  localeTime;
+                
+                </script>
         
         </div>
         <hr>
